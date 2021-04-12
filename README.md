@@ -1,8 +1,9 @@
-## Generative models in geosciences
+## Geophysical model generation with GANs
 
-Based on StyleGAN2 with adaptive discriminator augmentation (ADA)<br>
+Deep neural networks are widely used for estimation of subsurface parameters from geophysical measurements. To be efficient, they require large training datasets consisting of hundreds of thousands to millions of different models. This is not often possible with real data or manually generated models. A recent approach to artificial data generation based on generative adversarial networks (GANs) can be used to address this problem.<br>
 
-Abstract: *Z*
+We present a generator of 2D subsurface models based on StyleGAN2 (Karras, Laine, et al., 2020) and StyleGAN2 with adaptive discriminator augmentation (ADA, Karras, Aittala, et al., 2020) and apply it to the generation of synthetic density and stratigraphy models. As a training set, we use a representative set of subsurface models generated using Badlands modelling code. Once our GANs are trained and reach a sufficient degree of accuracy, they can be used to generate in real-time sufficiently detailed and varied artificial geological models. This allows creating multiple synthetic density and stratigraphy models in a cost-effective manner. A similar approach can be used to create subsurface models with different physical properties such as velocity models. The proposed method can serve as a useful augmentation tool for various deep learning codes, thus facilitating the development of more advanced tools for real-time estimation of subsurface parameters from collected data.
+
 
 ## Requirements
 
