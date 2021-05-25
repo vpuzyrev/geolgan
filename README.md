@@ -22,11 +22,13 @@ Pre-trained networks are stored as `*.pkl` files in 'networks' folder
 Running StyleGAN2 generator for stratigraphic models:
 
 ```.bash
-python stylegan2/run_generator.py generate-images --network=networks/stylegan2-stratigraphy6000.pkl --seeds=0-100 --truncation-psi=0.50 --result-dir=OUTPUT_DIR
+python stylegan2/run_generator.py generate-images --network=networks/stylegan2-stratigraphy6000.pkl \
+    --seeds=0-100 --truncation-psi=0.50 --result-dir=OUTPUT_DIR
 ```
 
 Running StyleGAN2 ADA generator for density models (change ADA_DIR to your StyleGAN2 ADA path):
 
 ```.bash
-python ADA_DIR/run_generator.py --network=networks/stylegan2ada-density1000.pkl --seeds=0-100 --truncation-psi=0.50 --outdir=OUTPUT_DIR
+python ADA_DIR/run_generator.py --network=networks/stylegan2ada-density1000.pkl --seeds=0-100 
+    \--truncation-psi=0.50 --outdir=OUTPUT_DIR
 ```
