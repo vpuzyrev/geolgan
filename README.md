@@ -29,6 +29,6 @@ python stylegan2/run_generator.py generate-images --network=networks/stylegan2-s
 Running StyleGAN2 ADA generator for density models (change ADA_DIR to your StyleGAN2 ADA path):
 
 ```.bash
-python ADA_DIR/run_generator.py --network=networks/stylegan2ada-density1000.pkl --seeds=0-100 
-    \--truncation-psi=0.50 --outdir=OUTPUT_DIR
+python ADA_DIR/run_generator.py --network=networks/stylegan2ada-density1000.pkl --seeds=0-100 \
+    --truncation-psi=0.50 --outdir=OUTPUT_DIR
 ```
